@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Lucas Hasting's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles/normalize_5.0.0.css" />
+  <link rel="stylesheet" href="./styles/bootstrap_5.0.2.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="./scripts/jqueryui_1.13.2.js"></script>
+  <script src="./scripts/jquery_3.7.0.js"></script>
+  <script src="./scripts/portfolio.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-sm-4 header">
+      <p><a class="header" href="" target="_blank">See the code</a></p>
+    </div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 header">
+      <p><a class="header" href="" target="_blank">Check valid</a></p>
+    </div>
+  </div>
+
+  <h2 class="bordered">Lucas Hasting's Portfolio</h2>
+  <button class="tablink_top" onclick="openCity('About_Me', this, 'defaultOpen1', 'defaultOpen2', 0, 'tablink_top')"
+    id="defaultOpen">About Me<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+      class="bi bi-plus plus" viewBox="0 0 16 16">
+      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+    </svg></button>
+
+  <div id="About_Me" class="tabcontent">
+    <p>My name is Lucas Hasting. I am a sophmore at the University of North Alabama, majoring in Information Technology
+      and Computer Science.</p>
+    <img src="images/profile.jpg" alt="profile">
+    <br><br>
+    <p><a href="https://github.com/LucasHasting" target="_blank">My GitHub</a></p>
+    <p><a href="https://www.linkedin.com/in/lucas-hasting-969970224" target="_blank">My Linkedin</a></p>
+    <p><a href="./documents/Resume.pdf" target="_blank">My Resume</a></p>
+    <p><a href="https://codepen.io/LucasHasting" target="_blank">My Code Pen</a></p>
+  </div>
+
+  <button class="tablink_bottom"
+    onclick="openCity('Projects', this, 'defaultOpen2', 'defaultOpen', 1, 'tablink_bottom')"
+    id="defaultOpen1">Projects<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+      class="bi bi-plus plus" viewBox="0 0 16 16">
+      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+    </svg></button>
+  <button class="tablink_bottom"
+    onclick="openCity('Education', this, 'defaultOpen1', 'defaultOpen', 2, 'tablink_bottom')"
+    id="defaultOpen2">Education<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+      class="bi bi-plus plus" viewBox="0 0 16 16">
+      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+    </svg></button>
+
+
+  <div id="Projects" class="tabcontent">
+    <button class="accordion1">Web Development<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+        fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+      </svg></button>
+    <div class="panel">
+      <p><a href="https://codepen.io/LucasHasting/full/abPbvom" target="_blank">Alpha Project</a></p>
+      <p><a href="https://lucashasting.github.io/Doge-Game/" target="_blank">Bravo/Charile Project</a></p>
+      <p><a href="https://lucashasting.github.io/Name-Fact-Game/" target="_blank">Delta Project</a></p>
+      <p><a href="https://lucashasting.github.io/Lucas-Hasting-Cool-Games/" target="_blank">Echo Project</a></p>
+    </div>
+  </div>
+
+  <div id="Education" class="tabcontent">
+    <button class="accordion2">CompTIA Certifications<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+        fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+      </svg></button>
+    <div class="panel">
+      <p><a href="https://www.credly.com/badges/468c42a7-dc91-4c6f-a841-1fe4755ecb59/public_url"
+          target="_blank">ITF+</a></p>
+      <p><a href="https://www.credly.com/badges/1b473b0f-dc68-4934-a436-4c4e9af22eea/public_url" target="_blank">A+</a>
+      </p>
+      <p><a href="https://www.credly.com/badges/6da3bbfc-f59f-4f40-a9cd-3cb59be1434f/public_url"
+          target="_blank">Network+</a></p>
+      <p><a href="https://www.credly.com/badges/931108e1-359e-4c19-a948-066e4498ed40/public_url"
+          target="_blank">Security+</a></p>
+      <p><a href="https://www.credly.com/badges/8d7a0c01-a5ef-49ed-91d9-e9e403a40a12/public_url"
+          target="_blank">Linux+</a></p>
+    </div>
+
+    <button class="accordion2">Degree/Short-Term Certificates<svg xmlns="http://www.w3.org/2000/svg" width="32"
+        height="32" fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+      </svg></button>
+    <div class="panel">
+      <p><a target="_blank" href="images/Associate_Degree_-_Computer_Information_Systems.jpg">Associate of Applied
+          Science in Information Technology with a concentration in Cyber Security</a></p>
+      <p><a target="_blank" href="images/Short_Term_Certificate_-_Computer_Technician.jpg">Short Term Certificate -
+          Computer Technician</a></p>
+      <p><a target="_blank" href="images/Short_Term_Certificate_-_Cybersecurity_Essentials.jpg">Short Term Certificate -
+          Cybersecurity Essentials</a></p>
+      <p><a target="_blank" href="images/Short_Term_Certificate_-_Server_Administration.jpg">Short Term Certificate -
+          Server Administration.jpg</a></p>
+      <p><a target="_blank" href="images/Short_Term_Certificate_-_CCNA_Preparation.jpg">Short Term Certificate - CCNA
+          Preparation</a></p>
+      <p><a target="_blank" href="images/High_School_Diploma.jpg">High School Diploma</a></p>
+    </div>
+
+    <button class="accordion2">Classes<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+        class="bi bi-plus plus" viewBox="0 0 16 16">
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+      </svg></button>
+    <div class="panel">
+      <button class="accordion2">Computer Science<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+          fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
+          <path
+            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+        </svg></button>
+      <div class="panel">
+        <p>Python Programming</p>
+        <p>Computer Science I-II (C++)</p>
+        <p>Data Structures and Algorithms (C++)</p>
+        <p>Advanced Object Oriented Programming (Java)</p>
+        <p>Applied Statistics I (R Programming)</p>
+        <p>Introduction to Discrete Structures</p>
+        <p>Comp Org & Assembly Lang Prog</p>
+      </div>
+      <button class="accordion2">Information Technology\Cyber Security<svg xmlns="http://www.w3.org/2000/svg" width="32"
+          height="32" fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
+          <path
+            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+        </svg></button>
+      <div class="panel">
+        <p>Cisco CCNA I-III</p>
+        <p>Computer Maintenance</p>
+        <p>Database Management Systems</p>
+        <p>IT Fundamentals (ITF+)</p>
+        <p>Linux I-II (Linux+)</p>
+        <p>Security Analysis (Pentest+)</p>
+        <p>Network Security (Security+)</p>
+        <p>Computer Forensics</p>
+        <p>Server Administration</p>
+        <p>Network Services Administration</p>
+        <p>Enterprise Virtualization</p>
+        <p>Introduction to HCI/UX</p>
+        <p>Secure Software Development</p>
+        <p></p>
+        <p></p>
+      </div>
+      <button class="accordion2">Mathematics<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+          fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
+          <path
+            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+        </svg></button>
+      <div class="panel">
+        <p>Business Statistics I</p>
+        <p>Applied Statistics I</p>
+        <p>Calculus I</p>
+        <p>Introduction to Discrete Structures</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

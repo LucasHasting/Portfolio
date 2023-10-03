@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Header-->
+
 <head>
   <meta charset="UTF-8" />
   <title>Lucas Hasting's Portfolio</title>
@@ -14,6 +16,7 @@
 </head>
 
 <body>
+  <!--Code and Validity links-->
   <div class="row">
     <div class="col-sm-4 header">
       <p><a class="header" href="https://github.com/LucasHasting/Portfolio" target="_blank">See the code</a></p>
@@ -26,38 +29,62 @@
     </div>
   </div>
 
+  <!--Title of the page (not title element)-->
   <h2 class="bordered">Lucas Hasting's Portfolio</h2>
-  <button class="tablink_top" onclick="openCity('About_Me', this, 'defaultOpen1', 'defaultOpen2', 0, 'tablink_top')"
+
+  <!--About me tab-->
+  <button class="tablink_top" onclick="openTab('About_Me', this, 'defaultOpen1', 'defaultOpen2', 0, 'tablink_top')"
     id="defaultOpen">About Me<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
       class="bi bi-plus plus" viewBox="0 0 16 16">
       <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
     </svg></button>
 
-  <div id="About_Me" class="tabcontent">
-    <p>My name is Lucas Hasting. I am a sophmore at the University of North Alabama, majoring in Information Technology
-      and Computer Science.</p>
-    <img src="images/profile.jpg" alt="profile">
-    <br><br>
-    <p><a href="https://github.com/LucasHasting" target="_blank">My GitHub</a></p>
-    <p><a href="https://www.linkedin.com/in/lucas-hasting-969970224" target="_blank">My Linkedin</a></p>
-    <p><a href="./documents/Resume.pdf" target="_blank">My Resume</a></p>
-    <p><a href="https://codepen.io/LucasHasting" target="_blank">My Code Pen</a></p>
+  <!--About me content-->
+  <div id="About_Me" class="tabcontent about">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card text-center" style="width: 18rem;">
+          <img class="card-img-top container" src="images/profile.jpg" alt="profile">
+          <div class="card-img-overlay">
+            <p>me</p>
+          </div>
+          <div class="card-body card_text">
+            <h5 class="card-title">Who am I?</h5>
+            <p class="card-text">My name is Lucas Hasting. I am a sophmore at the University of North Alabama,
+              majoring in Information Technology
+              and Computer Science.</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="col-sm-4">
+        <p><a href="https://github.com/LucasHasting" target="_blank">My GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/lucas-hasting-969970224" target="_blank">My Linkedin</a></p>
+        <p><a href="./documents/Resume.pdf" target="_blank">My Resume</a></p>
+        <p><a href="https://codepen.io/LucasHasting" target="_blank">My Code Pen</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
   </div>
 
-  <button class="tablink_bottom"
-    onclick="openCity('Projects', this, 'defaultOpen2', 'defaultOpen', 1, 'tablink_bottom')"
+  <!--Projects tab-->
+  <button class="tablink_bottom" onclick="openTab('Projects', this, 'defaultOpen2', 'defaultOpen', 1, 'tablink_bottom')"
     id="defaultOpen1">Projects<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
       class="bi bi-plus plus" viewBox="0 0 16 16">
       <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
     </svg></button>
+
+  <!--Education tab-->
   <button class="tablink_bottom"
-    onclick="openCity('Education', this, 'defaultOpen1', 'defaultOpen', 2, 'tablink_bottom')"
+    onclick="openTab('Education', this, 'defaultOpen1', 'defaultOpen', 2, 'tablink_bottom')"
     id="defaultOpen2">Education<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
       class="bi bi-plus plus" viewBox="0 0 16 16">
       <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
     </svg></button>
 
 
+  <!--Projects content-->
   <div id="Projects" class="tabcontent">
     <button class="accordion1">Web Development<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
         fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
@@ -72,12 +99,17 @@
     </div>
   </div>
 
+  <!--Education content-->
   <div id="Education" class="tabcontent">
+
+    <!--CompTIA Certifications sub-tab-->
     <button class="accordion2">CompTIA Certifications<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
         fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
         <path
           d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
       </svg></button>
+
+    <!--CompTIA Certifications content-->
     <div class="panel">
       <p><a href="https://www.credly.com/badges/468c42a7-dc91-4c6f-a841-1fe4755ecb59/public_url"
           target="_blank">ITF+</a></p>
@@ -91,11 +123,14 @@
           target="_blank">Linux+</a></p>
     </div>
 
+    <!--Degree/Short-Term Certificates sub-tab-->
     <button class="accordion2">Degree/Short-Term Certificates<svg xmlns="http://www.w3.org/2000/svg" width="32"
         height="32" fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
         <path
           d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
       </svg></button>
+
+    <!--Degree/Short-Term Certificates content-->
     <div class="panel">
       <p><a target="_blank" href="images/Associate_Degree_-_Computer_Information_Systems.jpg">Associate of Applied
           Science in Information Technology with a concentration in Cyber Security</a></p>
@@ -110,17 +145,23 @@
       <p><a target="_blank" href="images/High_School_Diploma.jpg">High School Diploma</a></p>
     </div>
 
+    <!--Classes sub-tab-->
     <button class="accordion2">Classes<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
         class="bi bi-plus plus" viewBox="0 0 16 16">
         <path
           d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
       </svg></button>
     <div class="panel">
+
+      <!--Classes content-->
+      <!--Computer Science sub-sub-tab-->
       <button class="accordion2">Computer Science<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
           fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
           <path
             d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
         </svg></button>
+
+      <!--Computer Science content-->
       <div class="panel">
         <p>Python Programming</p>
         <p>Computer Science I-II (C++)</p>
@@ -130,11 +171,15 @@
         <p>Introduction to Discrete Structures</p>
         <p>Comp Org & Assembly Lang Prog</p>
       </div>
+
+      <!--Information Technology\Cyber Security sub-sub-tab-->
       <button class="accordion2">Information Technology\Cyber Security<svg xmlns="http://www.w3.org/2000/svg" width="32"
           height="32" fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
           <path
             d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
         </svg></button>
+
+      <!--Information Technology\Cyber Security content-->
       <div class="panel">
         <p>Cisco CCNA I-III</p>
         <p>Computer Maintenance</p>
@@ -152,11 +197,15 @@
         <p></p>
         <p></p>
       </div>
+
+      <!--Mathematics sub-sub-tab-->
       <button class="accordion2">Mathematics<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
           fill="currentColor" class="bi bi-plus plus" viewBox="0 0 16 16">
           <path
             d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
         </svg></button>
+
+      <!--Mathematics content-->
       <div class="panel">
         <p>Business Statistics I</p>
         <p>Applied Statistics I</p>

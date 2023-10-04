@@ -1,3 +1,6 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Space+Mono&display=swap');
+
 /* Style assorted HTML elements and classes*/
 .plus {
     float: right;
@@ -9,6 +12,11 @@
 
 .about {
     display: inline;
+}
+
+.font_text {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 .about_text {

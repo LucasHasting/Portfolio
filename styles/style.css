@@ -37,6 +37,11 @@ a {
     color: lightblue;
 }
 
+#invis{
+  background-color: transparent;
+  filter: brightness(130%);
+}
+
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;

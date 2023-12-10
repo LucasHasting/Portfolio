@@ -1,2 +1,2 @@
 # Portfolio
-This a repository holds my portfolio, it can be accessed [here]().
+This repository holds my portfolio, it can be accessed [here](https://lucashasting.github.io/Portfolio/).

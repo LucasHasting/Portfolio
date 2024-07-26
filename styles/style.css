@@ -38,7 +38,7 @@ a {
 }
 
 #invis{
-  background-color: transparent;
+  background-color: #11ffee00;
   filter: brightness(130%);
 }
 
@@ -196,8 +196,9 @@ body {
     transition: 0.4s;
     color: #323232;
     font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
-    /* img size is 50x50 */
+    /* img size is 50x50 
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    */
     -webkit-animation: bg-scrolling-reverse 0.92s infinite;
     /* Safari 4+ */
     -moz-animation: bg-scrolling-reverse 0.92s infinite;
